@@ -4,4 +4,12 @@
   </div>
 </template>
 
-<style lang="less"></style>
+<style lang="less">
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+}
+</style>
