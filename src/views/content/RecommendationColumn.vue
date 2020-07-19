@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    data(){
+data(){
         return{
             banner:require('@/assets/img/banner.jpg')
         }
