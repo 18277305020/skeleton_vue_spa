@@ -1,6 +1,6 @@
 <template>
   <div class="ad">
-    <span class="left" @click="onLeft">ZUO</span>
+    <span class="left" @click="onLeft"></span>
     <div class="ad-box">
       <div class="ad-box-bar" :style="{width: `${list.length * 320}px`}" ref="adBox">
         <div class="item" v-for="i in list" :key="i.id">
@@ -31,7 +31,7 @@
         </div> -->
       </div>
     </div>
-    <span class="rigth" @click="onRight">YOU</span>
+    <span class="rigth" @click="onRight"></span>
   </div>
 </template>
 
@@ -71,7 +71,7 @@ export default {
     position: absolute;
     height: 40px;
     width: 20px;
-    background: aqua;
+    background: #2c2c2c;
     top: 60px;
     cursor: pointer;
   }
