@@ -5,8 +5,8 @@
       <div class="ad-box-bar" :style="{width: `${list.length * 320}px`}" ref="adBox">
         <div class="item" v-for="i in list" :key="i.id">
           <div class="title">
-            <div class="key">ABOUT</div>
-            <div class="at">关于</div>
+            <div class="key">NAME</div>
+            <div class="at">名字</div>
           </div>
           <div class="content">
             <div class="img"></div>

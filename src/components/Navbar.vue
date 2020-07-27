@@ -5,7 +5,7 @@
         <div>logo</div>
         <ul>
           <li
-            @click="onItem(n)"
+            @click="onItem(i,n)"
             v-for="(i,n) in list"
             :key="i.label"
             :class="n === index?'hover-color':''"
@@ -27,33 +27,41 @@ export default {
     return {
       list: [
         {
-          label: "首页 | HOME"
+          label: "首页 | HOME",
+          url: "/"
         },
         {
-          label: "水悦湾 | SHUIYUEWAN"
+          label: "水悦湾 | SHUIYUEWAN",
+          url: "/suiyuewan"
         },
         {
-          label: "看房团 | HOUSEKEEPING"
+          label: "看房团 | HOUSEKEEPING",
+          url: "/"
         },
         {
-          label: "楼讯 | PROPERTY"
+          label: "楼讯 | PROPERTY",
+          url: "/"
         },
         {
-          label: "问答百科 | Q&A"
+          label: "问答百科 | Q&A",
+          url: "/"
         },
         {
-          label: "团队 | TEAM"
+          label: "团队 | TEAM",
+          url: "/team"
         },
         {
-          label: "加入我们 | JOIN US"
+          label: "加入我们 | JOIN US",
+          url: "/jionus"
         }
       ],
       index: 0
     };
   },
   methods: {
-    onItem(index) {
+    onItem(row, index) {
       this.index = index;
+      this.$router.push(row.url);
     }
   }
 };

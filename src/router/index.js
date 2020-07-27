@@ -6,8 +6,26 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    component: () => import('../views/Home.vue')
-  }
+    component: () => import('../views/Index.vue'),
+    children:[
+      {
+        path: '/',
+        component: () => import('../views/Home.vue')
+      },
+      {
+        path: '/suiyuewan',
+        component: () => import('../views/Shuiyuewan.vue')
+      },
+      {
+        path: '/team',
+        component: () => import('../views/Team.vue')
+      },
+      {
+        path: '/jionus',
+        component: () => import('../views/JionUs.vue')
+      }
+    ]
+  },
 ]
 
 const router = new VueRouter({

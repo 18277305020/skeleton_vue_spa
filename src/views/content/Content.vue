@@ -1,6 +1,6 @@
 <template>
   <div class="content-key">
-    <h3>最新动态</h3>
+    <h3>置业团队</h3>
     <div class="column">
       <div class="column-bar">
         <AdColumn />
