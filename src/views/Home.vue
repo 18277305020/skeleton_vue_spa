@@ -1,19 +1,24 @@
 <template>
   <div class="home">
-    <Banner />
+    <!-- <Banner /> -->
     <Content />
   </div>
 </template>
 
 <script>
-import Banner from '@/components/Banner'
+// import Banner from '@/components/Banner'
 import Content from '@/views/content/Content'
 
 export default {
-  name: "Home",
   components: {
-    Banner,
+    // Banner,
     Content,
   }
 };
 </script>
+
+<style lang="less" scoped>
+.home{
+  
+}
+</style>>

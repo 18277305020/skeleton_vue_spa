@@ -5,6 +5,7 @@
 </template>
 
 <style lang="less">
+
 * {
   list-style: none;
   padding: 0;

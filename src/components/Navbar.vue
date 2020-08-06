@@ -1,8 +1,9 @@
 <template>
   <div>
+    <div class="clear-box"></div>
     <div class="nav-bar">
+      <div>logo</div>
       <div class="nav">
-        <div>logo</div>
         <ul>
           <li
             @click="onItem(i,n)"
@@ -12,9 +13,9 @@
           >{{i.label}}</li>
         </ul>
         <ul class="login">
-          <li>登陆</li>
+          <li>登陆 Login</li>
           <li>|</li>
-          <li>注册</li>
+          <li>注册 Registered</li>
         </ul>
       </div>
     </div>
@@ -28,47 +29,47 @@ export default {
       list: [
         {
           label: "首页 | HOME",
-          url: "/"
+          url: "/",
         },
         {
           label: "水悦湾 | SHUIYUEWAN",
-          url: "/suiyuewan"
-        },
-        {
-          label: "看房团 | HOUSEKEEPING",
-          url: "/"
-        },
-        {
-          label: "楼讯 | PROPERTY",
-          url: "/"
-        },
-        {
-          label: "问答百科 | Q&A",
-          url: "/"
+          url: "/suiyuewan",
         },
         {
           label: "团队 | TEAM",
-          url: "/team"
+          url: "/team",
         },
         {
           label: "加入我们 | JOIN US",
-          url: "/jionus"
-        }
+          url: "/jionus",
+        },
       ],
-      index: 0
+      index: 0,
     };
   },
   methods: {
     onItem(row, index) {
       this.index = index;
       this.$router.push(row.url);
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="less" scoped>
+.clear-box{
+  width: 100%;
+  height: 50px;
+}
+
 .nav-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
   background: #2c2c2c;
   color: #999;
   font-size: 14px;
